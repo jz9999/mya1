@@ -16,7 +16,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight); 
-  textSize(windowWidth < 500 ? 20 : 28); 
+  textSize(windowWidth < 500 ? 16 : 28); 
   fill(0);
 
    // 圆的中心坐标和半径
@@ -67,7 +67,7 @@ function draw() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  textSize(windowWidth < 500 ? 20 : 28); 
+  textSize(windowWidth < 500 ? 16 : 28); 
 }
 
 function mouseMoved() {
@@ -107,7 +107,7 @@ class Particle {
     this.lifespan = 255; 
     this.char = char;
 
-    this.size = windowWidth < 500 ? 20 : 28; 
+    this.size = windowWidth < 500 ? 16 : 28; 
   }
 
   update() {
